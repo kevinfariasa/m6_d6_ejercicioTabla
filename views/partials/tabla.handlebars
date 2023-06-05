@@ -1,0 +1,33 @@
+{{!-- Crear una vista llamada usuarios:
+Utilizar tablas para mostrar 5 usuarios con los siguientes datos:
+Id, nombre, apellido, email y teléfono.
+Utilizar helpers que muestren contenido dinámico dependiendo si existen o no usuarios para mostrar, iterar el array de
+usuarios.
+--}}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Email</th>
+            <th scope="col">Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.nombre}}</td>
+            <td>{{this.apellido}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.telefono}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<style>
+
+</style>
